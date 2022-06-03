@@ -1,0 +1,97 @@
+﻿<Window x:Class="PROG___Task_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG___Task_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="588" Width="800" FontSize="14" Background="#04c582">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20">
+
+        <StackPanel Margin="20">
+            <Label Content="Time Management Application" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Please Enter Module Information" Foreground="White" FontSize="15" HorizontalAlignment="Left"/>
+                <Label Content="Please Enter Semester Information" Foreground="White" FontSize="15" HorizontalAlignment="Right" Margin="215 0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Student Number*       " Foreground="White"/>
+                <TextBox Name="txtStudent_ID" Background="#545d6a" Foreground="White" FontSize="18" Width="120" Margin="2 0"/>
+
+                <Label Content="Number Of Weeks in Semester" Foreground="White" Margin="80 0"/>
+                <TextBox Name="txtNumWeeks" Background="#545d6a" Foreground="White" FontSize="18" Width="120" Margin="-35 0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Module Code              " Foreground="White"/>
+                <TextBox Name="txtModuleCode" Background="#545d6a" Foreground="White" FontSize="18" Width="120"/>
+
+                <Label Content="Date" Foreground="White" Margin="160 0"/>
+                <DatePicker Name="dpSemester" Background="#545d6a" Foreground="#545d6a" FontSize="13" Width="120" Margin="-35 0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Module Name             " Foreground="White"/>
+                <TextBox Name="txtModuleName" Background="#545d6a" Foreground="White" FontSize="13" Width="120"/>
+
+                <Button Name="btnSubmit" Click="btnSubmit_Click" Margin="185 0" Content="Submit" Background="#545d6a" Foreground="White" FontSize="18" Width="259"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Number of Credits      " Foreground="White"/>
+                <TextBox Name="txtCredits" Background="#545d6a" Foreground="White" FontSize="18" Width="120"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Class Hours Per Week " Foreground="White"/>
+                <TextBox Name="txtClassHours" Background="#545d6a" Foreground="White" FontSize="18" Width="120"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnAdd" Click="btnAdd_Click" Margin="7" Content="Add Module" Background="#545d6a" Foreground="White" FontSize="18" Width="259"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Please Enter Date and Hours Worked" Foreground="White"/>
+
+                <Button Name="btnView" Click="btnView_Click" Margin="185 0" Content="Calculate And View" Background="#545d6a" Foreground="White" FontSize="18" Width="259"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Module Code             " Foreground="White"/>
+                <TextBox Name="txtWorkingModuleCode" Margin="7 0" Background="#545d6a" Foreground="White" FontSize="18" Width="120"/>
+
+                <Button Name="btnSave" Click="btnSave_Click" Margin="145 0" Content="Save to File" Background="#545d6a" Foreground="White" FontSize="18" Width="259"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Hours Spent Working" Foreground="White"/>
+                <TextBox Name="txtHoursSpent" Margin="8.5 0" Background="#545d6a" Foreground="White" FontSize="18" Width="120"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Date" Foreground="White"/>
+                <DatePicker x:Name="dpWorking" Margin="111 0" Background="#545d6a" Foreground="#545d6a" FontSize="13" Width="120"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Name="btnCalculate" Click="btnCalculate_Click" Margin="7" Content="Add" Background="#545d6a" Foreground="White" FontSize="18" Width="260"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnClear" Click="btnClear_Click" Margin="7" Content="Clear" Background="#545d6a" Foreground="White" FontSize="18" Width="260"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label Content="*Please Note Student ID is Same As Username" Foreground="White" FontSize="9" Margin="13"/>
+            </StackPanel>
+
+            
+
+        </StackPanel>
+
+    </Border>
+</Window>
